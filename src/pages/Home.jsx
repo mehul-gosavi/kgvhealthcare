@@ -180,7 +180,7 @@ function Home() {
           safe and natural solutions."
         </p>
         <h4>- Vipul Shah</h4>
-        <span>Farmer, Gujarat</span>
+        <span>B2B Customer, Gujarat</span>
       </div>
 
       <div className="testimonial-card">
