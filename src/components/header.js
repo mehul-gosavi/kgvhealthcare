@@ -9,7 +9,7 @@ function Header() {
     <header className="header">
       <div className="logo">
         <Link to="/" onClick={() => setIsOpen(false)}>
-          <img src="/images/kgvlogoname.jpg" alt="KGV Healthcare" />
+          <img src="/images/navbar1.jpg" alt="KGV Healthcare" />
         </Link>
       </div>
 

@@ -49,7 +49,8 @@ function OurTeam() {
             <h3>Miss Sanuja Vikas Vadgaonkar </h3>
             <span>Director Marketing</span>
             <p>
-              Miss. Sanuja is a young, dynamic, enthusiastic person having a engineering degree in electrical. She  has total 16 years of working experience in different organizations and different departments like production, QA, QC and Marketing.She had worked as  Assistant Manager in marketing department in the companies like Mack Pharmatech Pvt. Ltd. Due to her passion in marketing and love for Animals she has decided to enter in new business for Animals lie manufacturing of Feed and Feed Supplement. 
+              A vibrant and results-driven professional, Sanuja combines her technical foundation in Electrical Engineering with an extensive 16-year track record in multi-disciplinary roles. Her deep understanding of the product lifecycle—from the precision of QA/QC and Production to the fast-paced world of Marketing—sets her apart as a well-rounded executive.
+              ​Following a successful tenure in marketing leadership at Mack Pharmatech, Sanuja’s entrepreneurial drive and lifelong passion for animals led her to the livestock nutrition industry. As Director of Marketing, she is dedicated to innovating the marketplace for animal feed supplements, ensuring that quality nutrition reaches every corner of the industry.   
             </p>
           </div>
 
