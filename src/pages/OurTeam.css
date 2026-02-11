@@ -1,0 +1,231 @@
+/* ======================
+   PAGE OFFSET FIX
+====================== */
+
+.team-page {
+  padding-top: 70px;
+  background: #f6fff9;
+  color: #2f2f2f;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .team-page {
+    padding-top: 70px;
+  }
+}
+
+/* ======================
+   HERO
+====================== */
+
+.team-hero {
+  background: linear-gradient(135deg, #00796b, #00bfa5);
+  padding: 90px 20px;
+  text-align: center;
+  color: white;
+}
+
+.team-hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+.team-hero p {
+  max-width: 720px;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  opacity: 0.95;
+}
+
+/* ======================
+   TEAM SECTION
+====================== */
+
+.team-section {
+  padding: 90px 20px;
+  text-align: center;
+}
+
+.team-section h2 {
+  font-size: 2.3rem;
+  color: #00695c;
+  margin-bottom: 50px;
+}
+
+/* ✅ GRID: 3 / 2 / 1 layout */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ======================
+   TEAM CARD (FIXED)
+====================== */
+
+.team-card {
+  background: #ffffff;
+  border-radius: 18px;
+  overflow: hidden;              /* IMPORTANT */
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.team-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 14px 36px rgba(0,150,136,0.25);
+}
+
+/* ✅ IMAGE FIX (bigger + square look) */
+.team-card img {
+  width: 100%;
+  height: 240px;                 /* controlled size */
+  object-fit: cover;
+  border-radius: 0;              /* remove circle */
+  margin: 0;
+  border: none;
+}
+
+/* CONTENT */
+.team-card h3 {
+  font-size: 1.25rem;
+  margin: 16px 14px 6px;
+  color: #004d40;
+}
+
+.team-card span {
+  font-size: 0.95rem;
+  color: #00897b;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.team-card p {
+  font-size: 0.92rem;
+  color: #555;
+  padding: 0 16px 18px;
+  line-height: 1.5;
+}
+
+/* ======================
+   CULTURE SECTION
+====================== */
+
+.team-culture {
+  background: #eefaf1;
+  padding: 90px 20px;
+  text-align: center;
+}
+
+.team-culture h2 {
+  font-size: 2.3rem;
+  color: #00695c;
+  margin-bottom: 20px;
+}
+
+.team-culture p {
+  max-width: 720px;
+  margin: 0 auto 40px;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* ======================
+   INFINITE CULTURE SLIDER
+====================== */
+
+.culture-slider {
+  overflow: hidden;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.culture-track {
+  display: flex;
+  gap: 20px;
+  width: max-content;
+  animation: culture-scroll 35s linear infinite;
+}
+
+/* Image styling */
+.culture-track img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+
+.culture-track img:hover {
+  transform: scale(1.05);
+}
+
+/* Smooth infinite movement */
+@keyframes culture-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* ======================
+   MOBILE FRIENDLY
+====================== */
+
+@media (max-width: 768px) {
+  .culture-track img {
+    width: 350px;
+    height: 250px;
+  }
+
+  .culture-track {
+    animation-duration: 45s; /* slower for mobile */
+  }
+}
+
+
+/* ======================
+   RESPONSIVE FIXES
+====================== */
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .team-card img {
+    height: 220px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .team-hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .team-card img {
+    height: 250px;
+  }
+
+  .culture-images img {
+    width: 100%;
+    max-width: 340px;
+  }
+}

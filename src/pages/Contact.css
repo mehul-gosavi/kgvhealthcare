@@ -1,0 +1,355 @@
+
+/* =========================
+   FIX FIXED HEADER OVERLAP
+   (Contact Page ONLY)
+========================= */
+
+.contact-info-container {
+  padding-top: 70px; /* desktop header height */
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .contact-info-container {
+    padding-top: 70px; /* mobile header height */
+  }
+}
+
+
+
+
+
+/* 🌿 General Page Styling */
+.contact-info-container {
+  font-family: "Poppins", sans-serif;
+  color: #1a1a1a;
+  background-color: #f9fcfa;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+/* 🟢 Hero Section */
+.contact-info-hero {
+  background: linear-gradient(to right, #dff5ef, #f4fff7);
+  padding: 100px 20px 70px;
+  position: relative;
+}
+
+.contact-info-hero h1 {
+  font-size: 2.8rem;
+  color: #116a4e;
+  margin-bottom: 15px;
+}
+
+.contact-info-hero p {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* 🐾 Decorative Paw */
+.contact-info-hero::after {
+  content: "🐾";
+  position: absolute;
+  font-size: 110px;
+  color: rgba(17, 106, 78, 0.1);
+  top: 40px;
+  right: 70px;
+  transform: rotate(-10deg);
+  user-select: none;
+}
+
+/* 🏢 Contact Details Section */
+.contact-details-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 30px;
+  padding: 80px 10%;
+  justify-items: center;
+}
+
+.contact-card {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 30px 20px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  max-width: 280px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+.icon {
+  font-size: 2.2rem;
+  color: #116a4e;
+  margin-bottom: 10px;
+}
+
+.contact-card h3 {
+  color: #116a4e;
+  margin-bottom: 8px;
+  font-size: 1.2rem;
+}
+
+.contact-card p {
+  color: #444;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* 🗺️ Map Section */
+.map-section {
+  padding: 60px 10%;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.map-section h2 {
+  color: #116a4e;
+  font-size: 2rem;
+  margin-bottom: 25px;
+}
+
+.map-container {
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 400px;
+  border: 0;
+}
+
+/* 🌍 End Section */
+.contact-end {
+  background: linear-gradient(to right, #e8f9ed, #f6fff9);
+  padding: 80px 20px;
+}
+
+.contact-end h2 {
+  color: #116a4e;
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.contact-end p {
+  color: #444;
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+/* 💬 Responsive Design */
+@media (max-width: 768px) {
+  .contact-info-hero {
+    padding: 80px 15px 60px;
+  }
+
+  .contact-info-hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .contact-info-hero::after {
+    font-size: 80px;
+    right: 30px;
+    top: 30px;
+  }
+
+  .contact-details-section {
+    padding: 60px 8%;
+  }
+
+  .contact-card {
+    max-width: 100%;
+  }
+
+  .map-container iframe {
+    height: 300px;
+  }
+
+  .contact-end h2 {
+    font-size: 1.8rem;
+  }
+}
+
+
+/* Wrapper for horizontal scroll */
+.scrollable-contact {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding: 10px 6px 20px;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  width: max-content;
+  animation: contactScroll 20s linear infinite;
+}
+
+.scrollable-contact::-webkit-scrollbar {
+  display: none;
+}
+
+/* Individual cards */
+.contact-card {
+  min-width: 240px;
+  flex-shrink: 0;
+  scroll-snap-align: start;
+  background: white;
+  border-radius: 16px;
+  padding: 26px 20px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(0, 150, 136, 0.2);
+}
+
+/* Pause scroll on hover or touch */
+.scrollable-contact:hover,
+.scrollable-contact:active {
+  animation-play-state: paused;
+}
+
+/* Keyframes for auto scroll */
+@keyframes contactScroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* Desktop: normal grid, no animation */
+@media (min-width: 769px) {
+  .scrollable-contact {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    animation: none;
+    width: 100%;
+  }
+  
+  .contact-card {
+    min-width: auto;
+    flex-shrink: 0;
+  }
+
+  /* Hide duplicate cards on desktop */
+  .contact-card.duplicate {
+    display: none;
+  }
+}
+
+/* MOBILE AUTO-SCROLL - CONTACT CARDS */
+@media (max-width: 768px) {
+  .scrollable-contact {
+    display: flex;
+    gap: 16px;
+    overflow-x: auto;
+    padding: 10px 6px 20px;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    width: max-content;
+    animation: contactScroll 20s linear infinite;
+  }
+
+  .scrollable-contact::-webkit-scrollbar {
+    display: none;
+  }
+
+  .contact-card {
+    min-width: 220px;   /* smaller width for mobile */
+    max-width: 220px;   /* fix width to avoid stretching */
+    flex-shrink: 0;
+    scroll-snap-align: start;
+    background: white;
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+}
+
+/* =========================
+   Mobile Contact Cards
+========================= */
+@media (max-width: 768px) {
+  .scrollable-contact {
+    display: flex;
+    gap: 16px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .scrollable-contact::-webkit-scrollbar {
+    display: none;
+  }
+
+  .contact-card {
+    min-width: 200px;       /* fixed width for mobile */
+    max-width: 220px;       /* optional max width */
+    flex-shrink: 0;
+    scroll-snap-align: start;
+
+    /* Wrap long text properly */
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+  }
+}
+
+
+
+/* Fix content hidden under fixed header */
+.contact-container {
+  padding-top: 80px; /* height of header */
+}
+
+/* Mobile adjustment */
+@media (max-width: 768px) {
+  .contact-container {
+    padding-top: 100px;
+  }
+}
+
+/* Fix content hidden under fixed header */
+.contact-container {
+  padding-top: 80px; /* height of header */
+}
+
+/* Mobile adjustment */
+@media (max-width: 768px) {
+  .contact-container {
+    padding-top: 90px;
+  }
+}
+
+
+.page {
+  padding-top: 90px;
+}
+
+@media (max-width: 768px) {
+  .page {
+    padding-top: 100px;
+  }
+}
+

@@ -1,0 +1,918 @@
+/* =====================
+   GLOBAL STYLES
+===================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+  line-height: 1.7;
+  background-color: #fbfefd; /* ✅ brighter white */
+  color: #2a2a2a;
+}
+
+.home-container {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+
+
+
+/* =====================
+   HERO SECTION
+===================== */
+
+.hero {
+  position: relative;
+  min-height: 60vh;
+  background: linear-gradient(135deg, #00796b, #00bfa5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 90px 20px;
+  overflow: hidden;
+}
+
+.hero::before,
+.hero::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.hero::before {
+  width: 220px;
+  height: 220px;
+  top: -60px;
+  left: -60px;
+}
+
+.hero::after {
+  width: 160px;
+  height: 160px;
+  bottom: -40px;
+  right: -40px;
+}
+
+.hero-content {
+  z-index: 2;
+}
+
+.hero h1 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  margin-bottom: 18px;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  max-width: 680px;
+  margin: 0 auto 28px;
+  opacity: 0.95;
+}
+
+.hero .paw-image {
+  position: absolute;
+  width: 120px;
+  opacity: 0.1;
+}
+
+.hero .paw1 {
+  top: 18%;
+  left: 12%;
+}
+
+.hero .paw2 {
+  bottom: 16%;
+  right: 10%;
+}
+
+.shop-btn {
+  background: linear-gradient(135deg, #f5a623, #fb8c00);
+  color: white;
+  padding: 14px 34px;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(251, 140, 0, 0.35);
+  transition: all 0.3s ease;
+}
+
+.shop-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 26px rgba(251, 140, 0, 0.45);
+}
+
+
+
+
+/* =====================
+   WHY CHOOSE US
+===================== */
+
+.why-choose {
+  position: relative;
+  padding: 100px 20px;
+  background: linear-gradient(180deg, #ffffff, #f4fff9);
+  text-align: center;
+  overflow: hidden;
+}
+
+.decorative-circle {
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background: rgba(0, 150, 136, 0.1);
+  top: 6%;
+  left: -70px;
+}
+
+.why-choose h2 {
+  font-size: 2.3rem;
+  margin-bottom: 20px;
+  color: #1f3d36;
+}
+
+.why-choose p {
+  max-width: 720px;
+  margin: 0 auto 50px;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 26px;
+}
+
+.feature-card {
+  background: white;
+  border-radius: 16px;
+  padding: 28px 22px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+  transition: all 0.35s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 30px rgba(0,150,136,0.18);
+}
+
+.feature-card .icon {
+  font-size: 2.4rem;
+  margin-bottom: 12px;
+  display: block;
+}
+
+/* =====================
+   PRODUCTS SECTION
+===================== */
+
+.products {
+  background: linear-gradient(180deg, #eefaf1, #ffffff);
+  padding: 90px 50px;
+  text-align: center;
+}
+
+.products h2 {
+  font-size: 2.4rem;
+  color: #00796b;
+  margin-bottom: 40px;
+}
+
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+}
+
+.product-card {
+  background: white;
+  border-radius: 16px;
+  padding: 26px;
+  width: 260px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+  transition: all 0.35s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 14px 36px rgba(0,150,136,0.25);
+}
+
+.product-card img {
+  width: 100%;
+  height: 170px;
+  object-fit: contain;
+  background: #f6fff9;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 16px;
+}
+
+.buynow-btn {
+  background: linear-gradient(135deg, #f5a623, #fb8c00);
+  color: white;
+  padding: 14px 34px;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(251, 140, 0, 0.35);
+  transition: all 0.3s ease;
+}
+
+.buynow-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 26px rgba(251, 140, 0, 0.45);
+}
+
+.buynow-btn {
+  margin-top: 45px;
+}
+
+
+
+/* =====================
+   TESTIMONIALS
+===================== */
+
+.testimonials {
+  padding: 90px 25px;
+  background-color: #f8fdfb;
+  text-align: center;
+}
+
+.testimonials h2 {
+  font-size: 2.3rem;
+  margin-bottom: 40px;
+  color: #00695c;
+}
+
+.testimonial-grid {
+  display: flex;
+  gap: 26px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.testimonial-card {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+  padding: 36px;
+  width: 290px;
+  transition: all 0.35s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(0,150,136,0.25);
+}
+
+.testimonial-card p {
+  font-size: 1.05rem;
+  color: #444;
+  margin-bottom: 16px;
+  font-style: italic;
+}
+
+/* =====================
+   PROCESS SECTION
+===================== */
+
+.process {
+  padding: 90px 20px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.process h2 {
+  font-size: 2.3rem;
+  margin-bottom: 20px;
+  color: #00695c;
+}
+
+.process-intro {
+  max-width: 720px;
+  margin: 0 auto 50px;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.process-steps {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.step {
+  background: linear-gradient(180deg, #ffffff, #f4fffc);
+  border-radius: 16px;
+  padding: 28px;
+  width: 230px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+  transition: all 0.35s ease;
+}
+
+.step:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(0,150,136,0.25);
+}
+
+.step-icon {
+  font-size: 2rem;
+  background: #e0f7f3;
+  width: 56px;
+  height: 56px;
+  line-height: 56px;
+  border-radius: 50%;
+  margin: 0 auto 14px;
+}
+
+/* =====================
+   INVITE SECTION
+===================== */
+
+.invite {
+  position: relative;
+  background: linear-gradient(135deg, #ffffff, #f4fff9);
+  padding: 90px 20px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.invite-content {
+  max-width: 720px;
+  margin: 0 auto;
+  z-index: 2;
+  position: relative;
+}
+
+.invite h2 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #008080;
+}
+
+.invite p {
+  font-size: 1.15rem;
+  margin-bottom: 32px;
+  color: #555;
+}
+
+.invite-btn {
+  background-color: #eca63d;
+  border: none;
+  padding: 14px 34px;
+  font-size: 1rem;
+  color: white;
+  border-radius: 30px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.invite-btn:hover {
+  background-color: #fb8c00;
+}
+
+/* Decorative Circles */
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(46, 125, 50, 0.12);
+}
+
+.circle-1 {
+  width: 120px;
+  height: 120px;
+  top: -25px;
+  left: -28px;
+}
+
+.circle-2 {
+  width: 150px;
+  height: 150px;
+  bottom: 30px;
+  right: 60px;
+}
+
+/* =====================
+   FAQ SECTION
+===================== */
+
+.faq {
+  background: #eefaf1;
+  padding: 90px 20px;
+  text-align: center;
+}
+
+.faq h2 {
+  font-size: 2.3rem;
+  margin-bottom: 40px;
+  color: #00695c;
+}
+
+.faq-list {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.faq-item {
+  background: white;
+  padding: 22px;
+  margin-bottom: 18px;
+  border-radius: 12px;
+  border-left: 4px solid #00a896;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.06);
+  transition: all 0.3s ease;
+}
+
+.faq-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 22px rgba(0,0,0,0.12);
+}
+
+/* =====================
+   RESPONSIVE
+===================== */
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  section {
+    padding: 70px 16px !important;
+  }
+
+  .product-card,
+  .testimonial-card,
+  .step {
+    width: 100%;
+    max-width: 340px;
+  }
+}
+
+
+/* Make product cards clickable */
+.product-card.clickable {
+  cursor: pointer;
+}
+
+/* Product name at top */
+.product-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #00695c;
+  margin-bottom: 12px;
+}
+
+/* Hover feedback */
+.product-card.clickable:hover .product-title {
+  color: #009688;
+}
+
+/* ===============================
+   Mobile Horizontal Scroll - Why Choose Us
+================================= */
+
+@media (max-width: 768px) {
+  .scrollable-features {
+    display: flex;
+    overflow-x: auto;
+    gap: 16px;
+    padding: 10px 10px 20px;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .scrollable-features::-webkit-scrollbar {
+    display: none; /* hide scrollbar */
+  }
+
+  .feature-card {
+    min-width: 240px;
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+  }
+}
+
+
+/* ===============================
+   Auto Scroll Animation (Mobile)
+================================= */
+
+@media (max-width: 768px) {
+  .scrollable-features {
+    animation: autoScroll 12s linear infinite;
+  }
+
+  /* Pause animation when user interacts */
+  .scrollable-features:hover,
+  .scrollable-features:active {
+    animation-play-state: paused;
+  }
+}
+
+/* Keyframes */
+@keyframes autoScroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 768px) {
+  .features-wrapper {
+    overflow: hidden;
+  }
+
+  .scrollable-features {
+    display: flex;
+    gap: 16px;
+    width: max-content;
+    animation: autoScroll 10s linear infinite;
+  }
+
+  .feature-card {
+    min-width: 240px;
+    flex-shrink: 0;
+  }
+
+  .scrollable-features:hover,
+  .scrollable-features:active {
+    animation-play-state: paused;
+  }
+}
+
+@keyframes autoScroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* DESKTOP & TABLET (normal grid, no animation) */
+@media (min-width: 769px) {
+  .features-wrapper {
+    overflow: visible;
+  }
+
+  .scrollable-features {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    animation: none;
+    width: auto;
+  }
+
+  /* Hide duplicated cards on desktop */
+  .scrollable-features .feature-card:nth-child(n + 5) {
+    display: none;
+  }
+}
+
+.product-wrapper,
+.testimonial-wrapper {
+  overflow: hidden;
+}
+
+/* Mobile only scrolling */
+@media (max-width: 768px) {
+  .scrollable-mobile {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 16px;
+    padding-bottom: 10px;
+    scroll-behavior: smooth;
+  }
+
+  .scrollable-mobile::-webkit-scrollbar {
+    display: none;
+  }
+
+  .product-card,
+  .testimonial-card {
+    min-width: 260px;
+    flex-shrink: 0;
+  }
+
+  /* ===============================
+   Mobile Horizontal Scroll – PRODUCTS ONLY
+================================= */
+
+@media (max-width: 768px) {
+  .product-grid {
+    display: flex;              /* switch from grid to flex */
+    flex-wrap: nowrap;          /* single row */
+    overflow-x: auto;
+    gap: 16px;
+    padding: 10px 8px 20px;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    justify-content: flex-start; /* IMPORTANT */
+  }
+
+  .product-grid::-webkit-scrollbar {
+    display: none;
+  }
+
+  .product-card {
+    min-width: 240px;           /* KEY: fixed card width */
+    max-width: 240px;
+    flex-shrink: 0;             /* prevent collapsing */
+    scroll-snap-align: start;
+  }
+}
+
+/* ===============================
+   MOBILE SIDE SCROLL – PRODUCTS
+================================= */
+
+@media (max-width: 768px) {
+  .product-wrapper {
+    position: relative;
+  }
+
+  .product-grid {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 16px;
+    padding: 10px 6px 30px;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .product-grid::-webkit-scrollbar {
+    display: none;
+  }
+
+  .product-card {
+    min-width: 260px;
+    flex-shrink: 0;
+    scroll-snap-align: start;
+  }
+
+  /* Swipe text */
+  .swipe-hint {
+    text-align: center;
+    font-size: 0.85rem;
+    color: #6b9c8f;
+    margin-top: 8px;
+    letter-spacing: 0.5px;
+  }
+
+  /* Dots indicator */
+  .swipe-dots {
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+    margin-top: 6px;
+  }
+
+  .swipe-dots span {
+    width: 6px;
+    height: 6px;
+    background: #b2dfd6;
+    border-radius: 50%;
+  }
+
+  .swipe-dots span.active {
+    background: #00796b;
+  }
+}
+
+
+/* ===============================
+   TESTIMONIALS AUTO SCROLL (MOBILE)
+================================ */
+
+/* =====================
+   TESTIMONIALS (FIXED)
+===================== */
+
+.testimonials {
+  padding: 90px 20px;
+  background-color: #f8fdfb;
+  text-align: center;
+}
+
+.testimonials h2 {
+  font-size: 2.3rem;
+  margin-bottom: 40px;
+  color: #00695c;
+}
+
+.testimonial-wrapper {
+  overflow: hidden;
+  position: relative;
+}
+
+/* ---------------------
+   TESTIMONIAL CARD
+--------------------- */
+
+.testimonial-card {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+  padding: 26px;
+  width: 290px;
+  transition: all 0.35s ease;
+}
+
+.testimonial-card p {
+  font-size: 1.05rem;
+  color: #444;
+  margin-bottom: 16px;
+  font-style: italic;
+}
+
+/* =====================
+   DESKTOP (3 CARDS)
+===================== */
+
+@media (min-width: 769px) {
+  .scrollable-testimonials {
+    display: flex;
+    justify-content: center;
+    gap: 26px;
+    animation: none;
+  }
+
+  /* show only first 3 cards */
+  .scrollable-testimonials .testimonial-card:nth-child(n + 5) {
+    display: none;
+  }
+}
+
+/* =====================
+   MOBILE (AUTO SCROLL)
+===================== */
+
+@media (max-width: 768px) {
+  .scrollable-testimonials {
+    display: flex;
+    gap: 18px;
+    width: max-content;
+    animation: testimonialScroll 20s linear infinite;
+  }
+
+  .testimonial-card {
+    min-width: 280px;
+    flex-shrink: 0;
+  }
+
+  /* pause on touch */
+  .scrollable-testimonials:hover,
+  .scrollable-testimonials:active {
+    animation-play-state: paused;
+  }
+}
+
+/* =====================
+   KEYFRAMES
+===================== */
+
+@keyframes testimonialScroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+}
+
+/* =====================
+   DESKTOP – FIXED LAYOUT
+===================== */
+
+@media (min-width: 769px) {
+  .scrollable-testimonials {
+    display: flex;
+    justify-content: center;
+    gap: 26px;
+    width: 100%;
+    max-width: 980px; /* perfect for 3 cards */
+    margin: 0 auto;
+    animation: none;
+    transform: none;
+  }
+
+  /* Hide duplicates completely */
+  .testimonial-card.duplicate {
+    display: none;
+  }
+
+  /* Ensure card sizing stays correct */
+  .testimonial-card {
+    flex: 0 0 290px;
+  }
+}
+
+
+/* ===============================
+   PRODUCTS AUTO SCROLL (MOBILE)
+================================ */
+
+.product-wrapper {
+  overflow: hidden;
+  position: relative;
+}
+
+/* MOBILE ONLY */
+@media (max-width: 768px) {
+  .scrollable-products {
+    display: flex;
+    gap: 16px;
+    width: max-content;
+    animation: productScroll 16s linear infinite;
+  }
+
+  .scrollable-products:hover,
+  .scrollable-products:active {
+    animation-play-state: paused;
+  }
+
+  .product-card {
+    min-width: 260px;
+    flex-shrink: 0;
+  }
+}
+
+/* DESKTOP – NORMAL LAYOUT */
+@media (min-width: 769px) {
+  .scrollable-products {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    animation: none;
+  }
+
+  /* hide duplicates on desktop */
+  .product-card.duplicate {
+    display: none;
+  }
+}
+
+/* KEYFRAMES */
+@keyframes productScroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+
+/* Prevent card shadow cut-off */
+.product-wrapper,
+.testimonial-wrapper {
+  overflow: hidden;
+  padding-bottom: 24px; /* ✅ KEY FIX */
+}
+
+/* Give moving rows breathing room */
+.scrollable-products,
+.scrollable-testimonials {
+  padding-bottom: 12px;
+}
+
+/* Ensure cards render fully */
+.product-card,
+.testimonial-card {
+  box-sizing: border-box;
+}
+
+.scrollable-products,
+.scrollable-testimonials {
+  will-change: transform;
+}

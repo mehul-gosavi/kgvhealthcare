@@ -1,0 +1,553 @@
+.about-container {
+  font-family: "Poppins", sans-serif;
+  color: #1a1a1a;
+  overflow-x: hidden;
+}
+
+/* 🟢 Hero Section */
+.about-hero {
+  background: linear-gradient(to right, #dff5ef, #f4fff7);
+  text-align: center;
+  padding: 100px 20px 80px;
+}
+
+.about-hero h1 {
+  font-size: 2.8rem;
+  color: #116a4e;
+  margin-bottom: 15px;
+}
+
+.about-hero p {
+  font-size: 1.1rem;
+  color: #333;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+.about-hero {
+  position: relative;
+  background: linear-gradient(to right, #dff5ef, #f4fff7);
+  text-align: center;
+  padding: 100px 20px 80px;
+  overflow: hidden;
+}
+
+/* 🐾 Decorative Paw Print */
+.about-hero::after {
+  content: "🐾";
+  position: absolute;
+  font-size: 160px;
+  color: rgba(17, 106, 78, 0.08); /* Soft green tint */
+  top: 60px;
+  right: 18px;
+  transform: rotate(-20deg);
+  z-index: 0;
+}
+
+.about-hero h1,
+.about-hero p {
+  position: relative;
+  z-index: 2; /* Keep text above paw */
+}
+
+.about-hero h1 {
+  font-size: 2.8rem;
+  color: #116a4e;
+  margin-bottom: 15px;
+}
+
+.about-hero p {
+  font-size: 1.1rem;
+  color: #333;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+
+
+
+
+/* 🌿 Mission Section */
+/* 🌿 Mission Section (Centered) */
+.mission-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 80px 10%;
+  background-color: #ffffff;
+  gap: 40px;
+}
+
+.mission-text {
+  max-width: 800px;
+}
+
+.mission-text h2 {
+  color: #0d5f45;
+  font-size: 2rem;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+.mission-text p {
+  color: #444;
+  line-height: 1.7;
+  font-size: 1.05rem;
+}
+
+.mission-image img {
+  width: 450px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+/* 🧩 What We Do Section (Centered like Our Mission) */
+.whatwedo-section {
+  background: linear-gradient(to right, #dff5ef, #f4feff);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 80px 10%;
+  background-color: #ffffff;
+  gap: 10px;
+}
+
+.whatwedo-section h2 {
+  color: #00695c;
+  font-size: 2rem;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+.whatwedo-intro {
+  color: #444;
+  max-width: 800px;
+  margin: 0 auto 40px;
+  line-height: 1.7;
+  font-size: 1.05rem;
+}
+
+/* Optional subtle background for cards */
+.whatwedo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 25px;
+  max-width: 1000px;
+  width: 100%;
+}
+
+.whatwedo-card {
+  background: #f9fcfc;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.whatwedo-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+.whatwedo-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.whatwedo-card h3 {
+  color: #116a4e;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.whatwedo-card p {
+  color: #444;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* 📱 Responsive */
+@media (max-width: 768px) {
+  .whatwedo-section {
+    padding: 60px 8%;
+  }
+
+  .whatwedo-card img {
+    height: 160px;
+  }
+
+  .whatwedo-section h2 {
+    font-size: 1.8rem;
+  }
+}
+
+/* 🧪 Values Section */
+.values-section {
+  text-align: center;
+  background-color: #f9fcfa;
+  padding: 80px 20px;
+}
+
+.values-section h2 {
+  color: #116a4e;
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.value-card {
+  background: white;
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.value-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+.value-card .icon {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 12px;
+}
+
+/* 🧭 Journey Section */
+.journey-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap-reverse;
+  padding: 80px 10%;
+  gap: 40px;
+  background: #f2fdf6;
+}
+
+.journey-content {
+  flex: 1;
+  min-width: 300px;
+}
+
+.journey-content h2 {
+  color: #116a4e;
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.journey-content p {
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+.journey-btn {
+  background-color: #116a4e;
+  color: white;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.journey-btn:hover {
+  background-color: #0d523c;
+}
+
+.journey-image img {
+  width: 450px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* 🌍 Closing Section */
+.about-closing {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(to right, #e8f9ed, #f6fff9);
+}
+
+.about-closing h2 {
+  color: #116a4e;
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.about-closing p {
+  color: #444;
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+}
+
+/* 📱 Responsive */
+@media (max-width: 768px) {
+  .mission-section,
+  .journey-section {
+    flex-direction: column;
+    text-align: center;
+    padding: 60px 8%;
+  }
+
+  .mission-image img,
+  .journey-image img {
+    width: 90%;
+  }
+
+  .about-hero h1 {
+    font-size: 2.2rem;
+  }
+}
+
+/* 🧩 What We Do Section (with visible circles + paws) */
+.whatwedo-section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 80px 10%;
+  background-color: #ffffff;
+  gap: 40px;
+  overflow: hidden;
+  z-index: 1;
+}
+
+
+/* 🐾 Paw decoration */
+.whatwedo-section .paw {
+  position: absolute;
+  width: 70px;
+  opacity: 0.18;
+  z-index: 0;
+  transform: rotate(10deg);
+  filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.1));
+}
+
+.paw.one {
+  top: 100px;
+  right: 5%;
+}
+
+.paw.two {
+  bottom: 120px;
+  left: 3%;
+  /* transform: rotate(-15deg); */
+}
+
+/* ✅ Foreground content above decorations */
+.whatwedo-section h2,
+.whatwedo-intro,
+.whatwedo-grid {
+  position: relative;
+  z-index: 2;
+}
+
+/* Card styling */
+.whatwedo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 25px;
+  max-width: 1000px;
+  width: 100%;
+}
+
+.whatwedo-card {
+  background: #f9fcfa;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.whatwedo-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+.whatwedo-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.whatwedo-card h3 {
+  color: #116a4e;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.whatwedo-card p {
+  color: #444;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* 📱 Responsive */
+@media (max-width: 768px) {
+  .whatwedo-section {
+    padding: 60px 8%;
+  }
+
+  .whatwedo-card img {
+    height: 160px;
+  }
+
+  .whatwedo-section h2 {
+    font-size: 1.8rem;
+  }
+
+  .paw {
+    width: 45px;
+    opacity: 0.12;
+  }
+
+  .whatwedo-section::before {
+    width: 160px;
+    height: 160px;
+    top: 20px;
+    left: 20px;
+  }
+
+  .whatwedo-section::after {
+    width: 180px;
+    height: 180px;
+    bottom: 30px;
+    right: 30px;
+  }
+}
+
+
+/* =========================
+   VALUES SECTION SCROLLING
+========================= */
+
+.values-wrapper {
+  overflow: hidden;
+}
+
+.scrollable-values {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 16px;
+  width: max-content;
+}
+
+/* Mobile only: auto scroll */
+@media (max-width: 768px) {
+  .scrollable-values {
+    animation: valuesScroll 18s linear infinite;
+    overflow-x: auto;
+    padding: 10px 8px 20px;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .scrollable-values::-webkit-scrollbar {
+    display: none;
+  }
+
+  .value-card {
+    min-width: 200px;
+    flex-shrink: 0;
+    scroll-snap-align: start;
+  }
+
+  /* pause animation on touch/hover */
+  .scrollable-values:hover,
+  .scrollable-values:active {
+    animation-play-state: paused;
+  }
+}
+
+/* Desktop view: normal grid, hide duplicates */
+@media (min-width: 769px) {
+  .scrollable-values {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    animation: none;
+    width: auto;
+  }
+
+  .value-card.duplicate {
+    display: none;
+  }
+}
+
+/* KEYFRAMES for auto scroll */
+@keyframes valuesScroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* Fix Values Cards Height on Desktop */
+@media (min-width: 769px) {
+  .value-card {
+    min-height: 280px; /* make card taller */
+    padding: 24px 20px; /* adjust padding if needed */
+  }
+}
+/* ===============================
+   Values Section - Mobile Scroll
+================================= */
+
+@media (max-width: 768px) {
+  .values-grid {
+    display: flex;            /* switch to horizontal scroll */
+    overflow-x: auto;         /* enable scrolling */
+    gap: 16px;
+    padding-bottom: 10px;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .values-grid::-webkit-scrollbar {
+    display: none; /* hide scrollbar */
+  }
+
+  .value-card {
+    min-width: 220px;         /* fixed card width */
+    max-width: 220px;         /* prevent stretching */
+    flex-shrink: 0;           /* prevent shrinking */
+    scroll-snap-align: start; /* snap to start */
+  }
+}
+
+
+
+/* Fix content hidden under fixed header */
+.about-container {
+  padding-top: 40px; /* header height */
+}
+
+/* Mobile view (header slightly taller) */
+@media (max-width: 768px) {
+  .about-container {
+    padding-top: 70px;
+  }
+}

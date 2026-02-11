@@ -1,0 +1,556 @@
+[
+  {
+    "id": 1,
+    "name": "Pro Grow",
+    "shortInfo": "Protein growth powder with vitamins and minerals",
+    "description": "A protein growth powder supplemented with vitamins and minerals to support poultry growth, immunity, and productivity.",
+    "image": "/images/products/progrow.png",
+    "category": "Feed Supplement",
+    "benefits": [
+      "Enhances growth and weight gain",
+      "Improves feed efficiency",
+      "Stronger immune system",
+      "Better egg production and quality",
+      "Reduces mortality rates"
+    ],
+    "contents": ["Proteins", "Vitamins", "Minerals"],
+    "howToUse": ["Mix with daily feed", "Use regularly as recommended"],
+    "availablePacking": ["25 kg", "50 kg"],
+    "caution": ["Do not overdose", "Store in a cool dry place"]
+  },
+
+  {
+    "id": 2,
+    "name": "KGV King Feed",
+    "shortInfo": "Feed for all kinds of cattle",
+    "description": "High quality, tasty, nutritious and urea-free cattle feed.",
+    "image": "/images/products/kingfeed.png",
+    "category": "Feed Supplement",
+    "benefits": ["Increases milk production", "Improves immunity", "Promotes growth"],
+    "contents": ["Calcium", "Phosphorus", "Zinc", "Copper"],
+    "howToUse": ["Add to feed daily"],
+    "availablePacking": ["25 kg", "50 kg"],
+    "caution": ["Avoid mixing with other mineral products"]
+  },
+
+  {
+    "id": 3,
+    "name": "Growth Enhancer",
+    "shortInfo": "Highly bio-natural growth booster",
+    "description": "Natural botanical extracts enriched with vitamins, minerals, amino acids and micro minerals.",
+    "image": "/images/products/growthenhancer.png",
+    "category": "Poultry Supplement",
+    "benefits": [
+      "Improves feed digestibility",
+      "Reduces diarrhea",
+      "Enhances immunity",
+      "Improves feed conversion ratio",
+      "Increases body weight and egg production"
+    ],
+    "contents": ["Vitamins", "Minerals", "Amino acids", "Botanical extracts"],
+    "howToUse": ["Mix with water or feed"],
+    "availablePacking": ["25 kg", "50 kg"],
+    "caution": ["Use only for poultry"]
+  },
+
+  {
+    "id": 4,
+    "name": "KG Min AD3",
+    "shortInfo": "Improves fertility, productivity and growth",
+    "description": "Fortified with bypass methionine, chelated minerals and essential vitamins.",
+    "image": "/images/products/kgminad3.png",
+    "category": "Feed Supplement",
+    "benefits": [
+      "Improves milk production",
+      "Enhances fertility",
+      "Supports healthy calves",
+      "Maintains overall health"
+    ],
+    "contents": [
+      "Amino acids",
+      "Vitamins A, D3, E, C, H",
+      "Protein",
+      "Bypass fat and protein",
+      "Herbal extracts"
+    ],
+    "howToUse": ["30 gm per cow or buffalo daily mixed with feed"],
+    "availablePacking": ["25 kg", "50 kg"],
+    "caution": ["Do not combine with other calcium products"]
+  },
+
+  {
+    "id": 5,
+    "name": "Fat Pro",
+    "shortInfo": "Improves milk yield and milk fat",
+    "description": "Specially formulated to enhance milk quantity and fat percentage.",
+    "image": "/images/products/fatpro.png",
+    "category": "Feed Supplement",
+    "benefits": ["Increased milk production", "Higher milk fat", "Better growth"],
+    "contents": [
+      "Protein",
+      "Bypass fat",
+      "Calcium",
+      "Phosphorus",
+      "Amino acids",
+      "Probiotics"
+    ],
+    "howToUse": ["Mix 1 kg in 100 kg feed concentrate"],
+    "availablePacking": ["25 kg", "50 kg"],
+    "caution": ["Not for human use"]
+  },
+
+  {
+    "id": 6,
+    "name": "KG Cal Gold",
+    "shortInfo": "Liquid calcium supplement for livestock",
+    "description": "Liquid feed supplement enriched with calcium, phosphorus and herbal extracts.",
+    "image": "/images/products/kgcalgold.png",
+    "category": "Liquid Feed Supplement",
+    "benefits": [
+      "Prevents calcium deficiency",
+      "Improves milk production",
+      "Supports bone health",
+      "Prevents milk fever"
+    ],
+    "contents": [
+      "Calcium",
+      "Phosphorus",
+      "Zinc",
+      "Vitamins A, D3, E, B12",
+      "Herbal extracts"
+    ],
+    "howToUse": [
+      "Cows and buffalo: 50 ml twice daily",
+      "Calves, sheep, goats: 20 ml twice daily"
+    ],
+    "availablePacking": ["25 kg", "50 kg"],
+    "caution": ["Follow recommended dosage"]
+  },
+
+  {
+    "id": 7,
+    "name": "Vetcal Gel",
+    "shortInfo": "Oral calcium gel with vitamins",
+    "description": "Highly absorbable oral calcium gel for faster recovery after calving.",
+    "image": "/images/products/vetcalgel.png",
+    "category": "Animal Feed Supplement",
+    "benefits": [
+      "Faster calcium absorption",
+      "Improves milk yield",
+      "Strengthens bones and muscles"
+    ],
+    "contents": ["Calcium", "Phosphorus", "Vitamin D3", "Vitamin B12"],
+    "howToUse": ["Administer orally before and after calving"],
+    "availablePacking": ["25 kg", "50 kg"],
+    "caution": ["Use as per veterinary guidance"]
+  },
+
+  {
+    "id": 8,
+    "name": "KG-H",
+    "shortInfo": "Vitamin H enriched mineral supplement",
+    "description": "Strengthens udder tissues, improves fertility and prevents hair loss.",
+    "image": "/images/products/kgh.png",
+    "category": "Animal Feed Supplement",
+    "benefits": [
+      "Prevents mastitis",
+      "Improves fertility",
+      "Strengthens udder tissues",
+      "Stops hair loss"
+    ],
+    "contents": [
+      "Vitamins A, D3, E, H, C",
+      "Zinc",
+      "Cobalt",
+      "Selenium"
+    ],
+    "howToUse": ["Use as per animal type and dosage chart"],
+    "availablePacking": ["25 kg", "50 kg"],
+    "caution": ["Consult veterinarian if required"]
+  },
+
+  {
+    "id": 9,
+    "name": "Liver Gain Tonic",
+    "shortInfo": "Liver protective growth tonic",
+    "description": "Protects liver from toxins and improves feed utilization.",
+    "image": "/images/products/livergain.png",
+    "category": "Feed Supplement",
+    "benefits": [
+      "Protects liver",
+      "Improves growth",
+      "Enhances milk and egg production"
+    ],
+    "contents": [
+      "Choline chloride",
+      "Vitamins B complex",
+      "Amino acids",
+      "Herbal extracts"
+    ],
+    "howToUse": ["Use as per species and age"],
+    "availablePacking": ["25 kg", "50 kg"],
+    "caution": ["Use as directed by veterinarian"]
+  },
+
+  {
+    "id": 10,
+    "name": "Spark Booster",
+    "shortInfo": "Energy boost formula",
+    "description": "Improves glucose availability and reduces metabolic stress.",
+    "image": "/images/products/sparkbooster.png",
+    "category": "Animal Feed Supplement",
+    "benefits": [
+      "Improves energy levels",
+      "Reduces ketosis",
+      "Enhances rumen fermentation"
+    ],
+    "contents": ["Gluconeogenic precursors", "Vitamins"],
+    "howToUse": ["Administer as per recommended schedule"],
+    "availablePacking": ["25 kg", "50 kg"],
+    "caution": ["Use under veterinary guidance"]
+  },
+
+  {
+    "id": 11,
+    "name": "Protein Pro",
+    "shortInfo": "Unique protein supplement",
+    "description": "Supports milk production, reduces stress and improves overall health.",
+    "image": "/images/products/proteinpro.png",
+    "category": "Animal Feed Supplement",
+    "benefits": [
+      "Increases milk production",
+      "Improves udder health",
+      "Reduces stress",
+      "Prevents ketosis"
+    ],
+    "contents": ["Protected protein", "Propylene glycol", "Biotin", "Minerals"],
+    "howToUse": ["Use as per dosage recommendations"],
+    "availablePacking": ["25 kg", "50 kg"],
+    "caution": ["Administer orally only"]
+  },
+
+  {
+    "id": 12,
+    "name": "Uterkeen Tonic",
+    "shortInfo": "Complete uterine health tonic",
+    "description": "Supports uterine involution and prevents retained placenta.",
+    "image": "/images/products/uterkeen.png",
+    "category": "Animal Feed Supplement",
+    "benefits": [
+      "Prevents retained placenta",
+      "Supports uterine recovery",
+      "Improves reproductive health"
+    ],
+    "contents": ["Minerals", "Vitamins", "Herbal extracts"],
+    "howToUse": ["Use after calving as directed"],
+    "availablePacking": ["25 kg", "50 kg"],
+    "caution": ["Not for human use"]
+  },
+
+  {
+    "id": 13,
+    "name": "Teet Care",
+    "shortInfo": "Protective enzyme formula",
+    "description": "Highly effective enzyme-based teat care supplement.",
+    "image": "/images/products/teetcare.png",
+    "category": "Animal Feed Supplement",
+    "benefits": ["Supports teat health"],
+    "contents": ["Vitamins", "Enzymes", "Minerals"],
+    "howToUse": ["Mix with jaggery or feed"],
+    "availablePacking": ["25 kg", "50 kg"],
+    "caution": ["Not for medicinal use"]
+  },
+
+  {
+    "id": 14,
+    "name": "Onion Saver",
+    "shortInfo": "Storage protection solution",
+    "description": "Prevents fungal and bacterial damage in stored produce.",
+    "image": "/images/products/onion.png",
+    "category": "Farming Products",
+    "benefits": [
+      "Prevents fungal growth",
+      "Extends shelf life",
+      "Reduces moisture damage"
+    ],
+    "contents": ["Botanical extracts", "Mineral dust"],
+    "howToUse": ["Apply during storage as dusting"],
+    "availablePacking": ["25 kg", "50 kg"],
+    "caution": ["Follow usage instructions"]
+  },
+
+  {
+    "id": 15,
+    "name": "Grow Silage",
+    "shortInfo": "Silage quality enhancer",
+    "description": "Improves fermentation, digestibility and feed quality.",
+    "image": "/images/products/growsilage.png",
+    "category": "Animal Feed Supplement",
+    "benefits": [
+      "Improves fermentation",
+      "Reduces spoilage",
+      "Enhances digestibility"
+    ],
+    "contents": ["Herbal extracts"],
+    "howToUse": ["Mix with silage as directed"],
+    "availablePacking": ["25 kg", "50 kg"],
+    "caution": ["Do not exceed recommended dose"]
+  },
+
+  {
+    "id": 16,
+    "name": "FlyOut +",
+    "shortInfo": "Fly larvae killer",
+    "description": "Kills all stages of fly larvae effectively.",
+    "image": "/images/products/flyout.png",
+    "category": "Farming Products",
+    "benefits": ["Kills flies", "Controls infestation"],
+    "contents": ["Neem oil", "Castor oil", "Organic carrier"],
+    "howToUse": ["Mix with sugar and sprinkle"],
+    "availablePacking": ["25 kg", "50 kg"],
+    "caution": ["Use gloves and mask"]
+  },
+
+  {
+    "id": 17,
+    "name": "Fly Growth Mask",
+    "shortInfo": "Reduces ammonia and odor",
+    "description": "Controls moisture, odor and bacterial load in poultry litter.",
+    "image": "/images/products/flygrowth.png",
+    "category": "Farming Products",
+    "benefits": [
+      "Reduces ammonia",
+      "Controls odor",
+      "Improves litter quality"
+    ],
+    "contents": ["Herbal oils"],
+    "howToUse": ["Sprinkle over litter as needed"],
+    "availablePacking": ["25 kg", "50 kg"],
+    "caution": ["Safe if mixed with feed accidentally"]
+  },
+
+  {
+    "id": 18,
+    "name": "Rat Out+",
+    "shortInfo": "Natural rodent repellent",
+    "description": "Safely repels rats without killing.",
+    "image": "/images/products/ratout.png",
+    "category": "Farming Products",
+    "benefits": ["Repels rodents", "Pet safe"],
+    "contents": ["Herbal extracts", "Essential oils"],
+    "howToUse": ["Spray in affected areas"],
+    "availablePacking": ["25 kg", "50 kg"],
+    "caution": ["Use carefully"]
+  },
+
+  {
+    "id": 19,
+    "name": "Everything Out",
+    "shortInfo": "Multi insect repellent",
+    "description": "Repels flies, bed bugs, ticks, mites and lizards.",
+    "image": "/images/products/everythingout.png",
+    "category": "Farming Products",
+    "benefits": ["Multi insect control"],
+    "contents": ["Eucalyptus oil", "Clove oil", "Citronella"],
+    "howToUse": ["Spray as required"],
+    "availablePacking": ["25 kg", "50 kg"],
+    "caution": ["Use carefully"]
+  },
+
+  {
+    "id": 20,
+    "name": "Mono-Calcium Phosphate (MCP)",
+    "shortInfo": "Micro encapsulated monobasic calcium phosphate",
+    "description": "High bioavailability calcium & phosphorus supplement.",
+    "image": "/images/products/mcp.jpeg",
+    "category": "Animal Feed Supplement",
+    "benefits": [
+      "Higher calcium & phosphorus absorption",
+      "Stronger bones",
+      "Improved weight gain"
+    ],
+    "contents": ["Mono-Calcium Phosphate"],
+    "availablePacking": ["25 kg", "50 kg"],
+    "caution": ["Store in cool and dry place"]
+  },
+
+  {
+    "id": 21,
+    "name": "Di-Calcium Phosphate (DCP)",
+    "shortInfo": "High quality mineral feed",
+    "description": "Improves bone strength, immunity and egg quality.",
+    "image": "/images/products/dcp.png",
+    "category": "Animal Feed Supplement",
+    "benefits": [
+      "Stronger bones",
+      "Improved immunity",
+      "Better egg quality"
+    ],
+    "contents": ["Di-Calcium Phosphate"],
+    "availablePacking": ["25 kg", "50 kg"],
+    "caution": ["Store in cool and dry place"]
+  },
+
+  {
+    "id": 22,
+    "name": "Tri-Calcium Phosphate (TCP)",
+    "shortInfo": "Calcium and phosphorus supplement",
+    "description": "Essential mineral feed supplement for livestock and poultry.",
+    "image": "/images/products/tcp.png",
+    "category": "Animal Feed Supplement",
+    "benefits": [
+      "Bone growth",
+      "Overall animal health"
+    ],
+    "contents": ["Tri-Calcium Phosphate"],
+    "availablePacking": ["25 kg", "50 kg"],
+    "caution": ["Store in cool and dry place"]
+  },
+
+  {
+    "id": 23,
+    "name": "Toxin Binder",
+    "shortInfo": "Broad spectrum mycotoxin binder",
+    "description": "Binds toxins in feed and prevents absorption.",
+    "image": "/images/products/toxinbinder.png",
+    "category": "Animal Feed Supplement",
+    "benefits": [
+      "Binds mycotoxins",
+      "Improves gut health"
+    ],
+    "contents": [
+      "Alumino silicates",
+      "Activated charcoal"
+    ],
+    "howToUse": ["Mix uniformly in feed"],
+    "availablePacking": ["25 kg", "50 kg"],
+    "caution": ["Follow usage instructions"]
+  },
+
+  {
+    "id": 24,
+    "name": "DL-Methionine Feed Grade 99%",
+    "shortInfo": "Essential amino acid supplement",
+    "description": "Supports growth and productivity in poultry and cattle.",
+    "image": "/images/products/dlmetionine.png",
+    "category": "Animal Feed Supplement",
+    "benefits": [
+      "Improves growth",
+      "Better feed efficiency"
+    ],
+    "contents": ["Methionine"],
+    "availablePacking": ["25 kg", "50 kg"],
+    "caution": ["Store in cool, dry place"]
+  },
+
+  {
+    "id": 25,
+    "name": "L-Lysine HCL Feed Grade 98.5%",
+    "shortInfo": "Essential amino acid for poultry",
+    "description": "Improves growth and feed efficiency.",
+    "image": "/images/products/lysine.png",
+    "category": "Vitamin Supplement",
+    "benefits": ["Better growth", "Reduced protein cost"],
+    "contents": ["L-Lysine HCL"],
+    "availablePacking": ["25 kg", "50 kg"],
+    "caution": ["Keep in dry and cool place"]
+  },
+
+  {
+    "id": 26,
+    "name": "L-Threonine Feed Grade 98.5%",
+    "shortInfo": "Essential amino acid supplement",
+    "description": "Optimizes growth and reduces nitrogen excretion.",
+    "image": "/images/products/thoreonine.png",
+    "category": "Animal Feed Supplement",
+    "benefits": [
+      "Optimized growth",
+      "Improved feed efficiency"
+    ],
+    "contents": ["L-Threonine"],
+    "availablePacking": ["25 kg", "50 kg"],
+    "caution": ["Store in cool and dry place"]
+  },
+
+  {
+    "id": 27,
+    "name": "Choline Chloride 60%",
+    "shortInfo": "Vitamin supplement",
+    "description": "Supports liver function and growth.",
+    "image": "/images/products/choline.png",
+    "category": "Animal Feed Supplement",
+    "benefits": [
+      "Improves growth",
+      "Prevents fatty liver"
+    ],
+    "contents": ["Choline Chloride"],
+    "availablePacking": ["25 kg", "50 kg"],
+    "caution": ["Hygroscopic material, keep sealed"]
+  },
+
+  {
+    "id": 28,
+    "name": "Chlortetracycline 15% (CTC)",
+    "shortInfo": "Broad-spectrum antibiotic",
+    "description": "Improves growth and survival rate.",
+    "image": "/images/products/ctc.png",
+    "category": "Animal Feed Supplement",
+    "benefits": [
+      "Controls bacterial infections",
+      "Improves FCR"
+    ],
+    "contents": ["Chlortetracycline"],
+    "howToUse": ["Mix as per feed recommendation"],
+    "availablePacking": ["25 kg", "50 kg"],
+    "caution": ["Not for laying birds"]
+  },
+
+  {
+    "id": 29,
+    "name": "Multienzyme",
+    "shortInfo": "Digestive enzyme blend",
+    "description": "Improves digestibility and weight gain.",
+    "image": "/images/products/multienzyme.png",
+    "category": "Poultry Supplement",
+    "benefits": [
+      "Improved digestion",
+      "Better weight gain"
+    ],
+    "contents": ["Enzymes"],
+    "howToUse": ["400-500g per ton feed"],
+    "availablePacking": ["25 kg", "50 kg"],
+    "caution": ["Store in cool place"]
+  },
+
+  {
+    "id": 30,
+    "name": "Vitamin A",
+    "shortInfo": "Vitamin A supplement",
+    "description": "Supports growth, fertility and immunity.",
+    "image": "/images/products/vitaminA.png",
+    "category": "Animal Feed Supplement",
+    "benefits": [
+      "Prevents vitamin A deficiency",
+      "Improves immunity"
+    ],
+    "contents": ["Vitamin A"],
+    "availablePacking": ["25 kg", "50 kg"],
+    "caution": ["Follow feeding guidelines"]
+  },
+
+  {
+    "id": 31,
+    "name": "Vitamin E",
+    "shortInfo": "Vitamin E supplement",
+    "description": "Supports immunity and reproduction.",
+    "image": "/images/products/vitaminE.png",
+    "category": "Animal Feed Supplement",
+    "benefits": [
+      "Improves fertility",
+      "Boosts immunity"
+    ],
+    "contents": ["Vitamin E"],
+    "availablePacking": ["25 kg", "50 kg"],
+    "caution": ["Follow feeding guidelines"]
+  }
+]

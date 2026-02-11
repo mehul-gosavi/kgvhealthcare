@@ -1,0 +1,84 @@
+/* General Header */
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #00796b; /* same as hero/nav/footer */
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 24px;
+  z-index: 1000;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    height: 80px;
+
+  
+}
+
+/* Logo */
+.logo img {
+  height: 50px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* Desktop Nav */
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #ffe18d;
+}
+
+/* Mobile Hamburger Button */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background: #0a9d8c;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px;
+    gap: 12px;
+    display: none;
+    width: 200px;
+    border-radius: 0 0 6px 6px;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+}
+
+.logo img {
+  cursor: pointer;
+}
+
+.nav-links {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}

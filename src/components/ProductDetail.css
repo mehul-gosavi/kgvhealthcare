@@ -1,0 +1,261 @@
+/* ===========================
+   Product Detail Page
+=========================== */
+
+.product-detail-container {
+  padding: 120px 6% 60px;
+  background: #f4faf7;
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Card Layout */
+.product-detail-card {
+  max-width: 1100px;
+  margin: auto;
+  background: #ffffff;
+  border-radius: 18px;
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 40px;
+  padding: 40px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+
+/* Image */
+.product-detail-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-detail-image img {
+  width: 100%;
+  max-width: 420px;
+  border-radius: 16px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.product-detail-image img:hover {
+  transform: scale(1.04);
+}
+
+/* Info */
+.product-detail-info h1 {
+  font-size: 2.2rem;
+  color: #116a4e;
+  margin-bottom: 6px;
+}
+
+.product-short {
+  font-size: 1rem;
+  color: #5a7f6c;
+  margin-bottom: 12px;
+  font-weight: 500;
+}
+
+.product-desc {
+  color: #333;
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+/* Sections */
+.product-sections {
+  display: grid;
+  gap: 24px;
+}
+
+.product-section {
+  background: #f7fdf9;
+  border-radius: 14px;
+  padding: 20px 22px;
+  border-left: 5px solid #116a4e;
+}
+
+.product-section h3 {
+  font-size: 1.1rem;
+  color: #116a4e;
+  margin-bottom: 12px;
+}
+
+/* List Styling (No Bullets) */
+.product-section ul {
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 8px;
+}
+
+.product-section li {
+  list-style: none;
+  color: #333;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+/* Icons per section */
+.product-section li::before {
+  content: "🌿";
+  font-size: 0.9rem;
+}
+
+.product-section:nth-child(2) li::before {
+  content: "🧪";
+}
+
+.product-section:nth-child(3) li::before {
+  content: "📌";
+}
+
+.product-section.caution li::before {
+  content: "⚠️";
+}
+
+/* Back Button */
+.back-btn {
+  margin-top: 35px;
+  background: #116a4e;
+  color: white;
+  border: none;
+  padding: 12px 26px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.back-btn:hover {
+  background: #0d523c;
+}
+
+/* ===========================
+   Mobile Optimization
+=========================== */
+
+@media (max-width: 900px) {
+  .product-detail-card {
+    grid-template-columns: 1fr;
+    padding: 30px;
+  }
+
+  .product-detail-image img {
+    max-width: 300px;
+  }
+
+  .product-detail-info h1 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .product-short,
+  .product-desc {
+    text-align: center;
+  }
+
+  .back-btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-detail-container {
+    padding: 100px 4% 40px;
+  }
+
+  .product-section {
+    padding: 16px;
+  }
+
+  .product-section h3 {
+    font-size: 1rem;
+  }
+
+  .product-section li {
+    font-size: 0.9rem;
+  }
+}
+
+/* Fixed Image Wrapper */
+.product-detail-image {
+  width: 100%;
+  height: 380px;
+  background: #f7fdf9;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Image itself */
+.product-detail-image img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  image-rendering: auto;
+  transition: transform 0.3s ease;
+}
+
+/* Subtle hover effect */
+.product-detail-image img:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .product-detail-image {
+    height: 260px;
+    padding: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-detail-image {
+    height: 220px;
+  }
+}
+
+.product-detail-card {
+  animation: fadeUp 0.6s ease;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.product-section {
+  margin-top: 26px;
+}
+
+.product-section h3 {
+  font-size: 1.15rem;
+  color: #116a4e;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.icon-list {
+  list-style: none;
+  padding: 0;
+}
+
+.icon-list li {
+  font-size: 0.95rem;
+  color: #444;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
