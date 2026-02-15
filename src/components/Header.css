@@ -18,7 +18,7 @@
 /* ================= LOGO ================= */
 
 .logo img {
-  height: 50px;
+  height: 60px;
   width: auto;
   object-fit: contain;
   cursor: pointer;
@@ -60,12 +60,12 @@
 @media (max-width: 768px) {
 
   .header {
-    height: 60px;
+    height: 70px;
     padding: 8px 15px;
   }
 
   .logo img {
-    height: 38px;   /* Smaller logo for mobile */
+    height: 45px;   /* Smaller logo for mobile */
   }
 
   .menu-toggle {
