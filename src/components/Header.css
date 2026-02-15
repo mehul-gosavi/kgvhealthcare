@@ -1,32 +1,35 @@
-/* General Header */
+/* ================= HEADER ================= */
+
 .header {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: #00796b; /* same as hero/nav/footer */
+  background-color: #00796b;
   color: white;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 12px 24px;
+  padding: 10px 20px;
   z-index: 1000;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
-    height: 80px;
-
-  
+  height: 70px;   /* Slightly reduced */
 }
 
-/* Logo */
+/* ================= LOGO ================= */
+
 .logo img {
-  height: 65px;
+  height: 50px;
   width: auto;
   object-fit: contain;
+  cursor: pointer;
 }
 
-/* Desktop Nav */
+/* ================= DESKTOP NAV ================= */
+
 .nav-links {
   display: flex;
-  gap: 20px;
+  gap: 25px;
+  align-items: center;
 }
 
 .nav-links a {
@@ -40,7 +43,8 @@
   color: #ffe18d;
 }
 
-/* Mobile Hamburger Button */
+/* ================= HAMBURGER ================= */
+
 .menu-toggle {
   display: none;
   background: none;
@@ -48,37 +52,47 @@
   color: white;
   font-size: 28px;
   cursor: pointer;
+  z-index: 1100;
 }
 
-/* --- Responsive --- */
+/* ================= MOBILE ================= */
+
 @media (max-width: 768px) {
+
+  .header {
+    height: 60px;
+    padding: 8px 15px;
+  }
+
+  .logo img {
+    height: 38px;   /* Smaller logo for mobile */
+  }
+
   .menu-toggle {
     display: block;
   }
 
   .nav-links {
     position: absolute;
-    top: 70px;
+    top: 60px;   /* matches header height */
     right: 0;
     background: #0a9d8c;
     flex-direction: column;
     align-items: flex-start;
     padding: 16px;
-    gap: 12px;
+    gap: 14px;
     display: none;
     width: 200px;
-    border-radius: 0 0 6px 6px;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
   }
 
   .nav-links.open {
     display: flex;
   }
-}
 
-.logo img {
-  cursor: pointer;
-}
-
-.nav-links {
-  transition: transform 0.3s ease, opacity 0.3s ease;
+  /* Hide desktop nav */
+  .nav-links:not(.open) {
+    display: none;
+  }
 }

@@ -8,6 +8,7 @@ function Footer() {
       <div className="footer-left">
         <h3>KGV Healthcare</h3>
         <p>© 2025 KGV Healthcare. All Rights Reserved.</p>
+        
       </div>
 
       
@@ -31,6 +32,17 @@ function Footer() {
         <p>Mobile : 7387471991, 9890031621, 8485814506</p>
 
         {/* <p>Mobile : 7387471991</p> */}
+
+        <p className="developer-credit">
+            Website Developed by{" "}
+            <a 
+              href="https://mehulportfolio-phi.vercel.app/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
+              MG Web Solutions ™
+            </a>
+          </p>
 
 
       </div>
